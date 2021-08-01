@@ -1,5 +1,12 @@
+import Dependencies._
+
 name := "sonatype"
 
-version := "0.1-SNAPSHOT"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.iamsmkr"
+ThisBuild / scalaVersion := "2.12.14"
 
-scalaVersion := "2.12.4"
+libraryDependencies ++= Seq(
+  scalaTest,
+  scalaCheck
+)
