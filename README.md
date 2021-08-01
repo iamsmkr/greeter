@@ -9,6 +9,8 @@ This project aims to demonstrates building complete CI/CD workflow using GitHub 
 - Upload code coverage reports on Codecov.io
 - Notify release on Slack
 
-With the following issue I was able to secure the namespace `com.shivamkapoor` in Sonatype OSSRH (Open Source Software Repository Hosting).
+**Notes:**
 
-https://issues.sonatype.org/browse/OSSRH-71578
+- With following issue, I was able to secure the namespace `com.shivamkapoor` in Sonatype OSSRH (Open Source Software Repository Hosting).
+
+    https://issues.sonatype.org/browse/OSSRH-71578
