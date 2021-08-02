@@ -1,1 +1,10 @@
 name: Complete CI/CD Workflow
+
+on: [pull_request]
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: env
