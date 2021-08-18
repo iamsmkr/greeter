@@ -1,4 +1,4 @@
-package com.shivamkapoor.sonatype
+package com.shivamkapoor.greeter
 
 import org.scalatest.matchers.should
 import org.scalatest.propspec.AnyPropSpec

@@ -1,4 +1,4 @@
-package com.shivamkapoor.sonatype
+package com.shivamkapoor.greeter
 
 object Greeter {
 
