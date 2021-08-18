@@ -1,6 +1,6 @@
 import Dependencies._
 
-name := "sonatype"
+name := "greeter"
 
 ThisBuild / scalaVersion := "2.12.14"
 
@@ -10,8 +10,8 @@ ThisBuild / organizationHomepage := Some(url("http://shivamkapoor.com/"))
 
 ThisBuild / scmInfo := Some(
   ScmInfo(
-    url("https://github.com/iamsmkr/sonatype"),
-    "scm:git@github.com:iamsmkr/sonatype.git"
+    url("https://github.com/iamsmkr/greeter"),
+    "scm:git@github.com:iamsmkr/greeter.git"
   )
 )
 ThisBuild / developers := List(
@@ -25,7 +25,7 @@ ThisBuild / developers := List(
 
 ThisBuild / description := "Greet API"
 ThisBuild / licenses := Seq("MIT" -> url("https://opensource.org/licenses/MIT"))
-ThisBuild / homepage := Some(url("https://github.com/iamsmkr/sonatype"))
+ThisBuild / homepage := Some(url("https://github.com/iamsmkr/greeter"))
 
 // Remove all additional repository other than Maven Central from POM
 ThisBuild / pomIncludeRepository := { _ => false }
