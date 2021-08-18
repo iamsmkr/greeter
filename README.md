@@ -1,4 +1,4 @@
-# sonatype
+# greeter
 
 This project aims to demonstrates building complete CI/CD workflow using GitHub Actions which includes following agenda:
 - Automate unit/integration testing
