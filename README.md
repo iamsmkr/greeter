@@ -1,5 +1,7 @@
 # greeter
 
+[![CI Workflow](https://github.com/iamsmkr/greeter/actions/workflows/ci.yml/badge.svg)](https://github.com/iamsmkr/greeter/actions/workflows/ci.yml)
+
 This project aims to demonstrates building complete CI/CD workflow using GitHub Actions which includes following agenda:
 - Automate unit/integration testing
 - Validate code formatting
