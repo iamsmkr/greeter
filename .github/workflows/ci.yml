@@ -1,6 +1,13 @@
 name: Complete CI Workflow
 
-on: [ pull_request, push ]
+on:
+  pull_request:
+    branches:
+      - main
+      - 'releases/**'
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -21,7 +28,7 @@ jobs:
       - name: Check for scalafmt conformance
         uses: jrouly/scalafmt-native-action@v1
         with:
-          version: '2.7.5'
+          version: '3.0.0'
       - name: Coursier cache
         uses: coursier/cache-action@v5
       - name: Build and Test
