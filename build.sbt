@@ -2,7 +2,7 @@ import Dependencies._
 
 name := "greeter"
 
-ThisBuild / scalaVersion := "2.12.14"
+ThisBuild / scalaVersion := "2.12.13"
 
 ThisBuild / organization := "com.shivamkapoor"
 ThisBuild / organizationName := "shivamkapoor"
