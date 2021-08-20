@@ -19,7 +19,7 @@ jobs:
         with:
           java-version: "adopt@1.8"
       - name: Check for scalafmt conformance
-        uses: AvaPL/scalafmt-native-formatter@v0.1.2
+        uses: openlawteam/scalafmt-ci@v2
       - name: Coursier cache
         uses: coursier/cache-action@v5
       - name: Build and Test
