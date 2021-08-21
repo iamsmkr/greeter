@@ -8,12 +8,15 @@ ThisBuild / organization := "com.shivamkapoor"
 ThisBuild / organizationName := "shivamkapoor"
 ThisBuild / organizationHomepage := Some(url("http://shivamkapoor.com/"))
 
+crossScalaVersions := Seq(scalaVersion.value, "2.11.12", "2.13.0")
+
 ThisBuild / scmInfo := Some(
   ScmInfo(
     url("https://github.com/iamsmkr/greeter"),
     "scm:git@github.com:iamsmkr/greeter.git"
   )
 )
+
 ThisBuild / developers := List(
   Developer(
     id = "iamsmkr",
