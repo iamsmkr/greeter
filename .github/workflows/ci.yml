@@ -25,12 +25,12 @@ jobs:
         uses: olafurpg/setup-scala@v13
         with:
           java-version: "adopt@1.8"
+      - name: Coursier cache
+        uses: coursier/cache-action@v5
       - name: Check for scalafmt conformance
         uses: jrouly/scalafmt-native-action@v1
         with:
           version: '3.0.0'
-      - name: Coursier cache
-        uses: coursier/cache-action@v5
       - name: Run tests
         run: sbt coverage test
       - name: Generate coverage report
