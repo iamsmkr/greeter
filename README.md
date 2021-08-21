@@ -1,6 +1,7 @@
 # greeter
 
 [![CI Workflow](https://github.com/iamsmkr/greeter/actions/workflows/ci.yml/badge.svg)](https://github.com/iamsmkr/greeter/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/iamsmkr/greeter/branch/main/graph/badge.svg?token=01E1X7VC4I)](https://codecov.io/gh/iamsmkr/greeter)
 
 This project aims to demonstrates building complete CI/CD workflow using GitHub Actions which includes following agenda:
 - Automate unit/integration testing
