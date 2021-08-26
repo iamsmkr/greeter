@@ -1,7 +1,7 @@
 # greeter
 
 [![CI Workflow](https://github.com/iamsmkr/greeter/actions/workflows/ci.yml/badge.svg)](https://github.com/iamsmkr/greeter/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/iamsmkr/greeter/branch/main/graph/badge.svg?token=01E1X7VC4I)](https://codecov.io/gh/iamsmkr/greeter)
+[![codecov](https://codecov.io/gh/iamsmkr/greeter/branch/main/graph/badge.svg?token=01E1X7VC4I)](https://codecov.io/gh/iamsmkr/greeter) [![Join the chat at https://gitter.im/_greeter/community](https://badges.gitter.im/_greeter/community.svg)](https://gitter.im/_greeter/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![GitHub](https://img.shields.io/github/license/iamsmkr/greeter)
 
 This project aims to demonstrates building complete CI/CD workflow using GitHub Actions which includes following agenda:
