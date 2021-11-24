@@ -46,3 +46,5 @@ libraryDependencies ++= Seq(
   scalaTest,
   scalaCheck
 )
+
+(compile in Compile) := ((compile in Compile) dependsOn writeHooks).value
