@@ -47,4 +47,19 @@ libraryDependencies ++= Seq(
   scalaCheck
 )
 
-(compile in Compile) := ((compile in Compile) dependsOn writeHooks).value
+// 1. Executes writeHooks task only as part of sbt compile command
+// (compile in Compile) := ((compile in Compile) dependsOn writeHooks).value
+
+// 2. Executes writeHooks task on launching sbt shell
+// This prepends the String you would type into the shell
+lazy val startupTransition: State => State = { s: State =>
+  "writeHooks" :: s
+}
+
+// onLoad is scoped to Global because there's only one.
+onLoad in Global := {
+  val old = (onLoad in Global).value
+  // compose the new transition on top of the existing one
+  // in case your plugins are using this hook.
+  startupTransition compose old
+}
