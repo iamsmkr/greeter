@@ -50,7 +50,7 @@ libraryDependencies ++= Seq(
 // 1. Executes writeHooks task only as part of sbt compile command
 // (compile in Compile) := ((compile in Compile) dependsOn writeHooks).value
 
-// 2. Executes writeHooks task on launching sbt shell
+// 2. Executes writeHooks task on launching sbt shell. Refer https://www.scala-sbt.org/1.x/docs/Howto-Startup.html
 // This prepends the String you would type into the shell
 lazy val startupTransition: State => State = { s: State =>
   "writeHooks" :: s
