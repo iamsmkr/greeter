@@ -107,6 +107,11 @@ In order to release artifacts against a version, go to staging repository, selec
 
 **Note:** After you successfully release, your component will be available to the public on Central https://repo1.maven.org/maven2/, typically within 30 minutes, though updates to https://search.maven.org can take up to four hours.
 
+Alternatively, you could use `sbt-sonatype` plugin to take care of steps above for you, like so:
+```sh
+$ sbt sonatypeRelease
+```
+
 ## References
 - [Publish Guide](https://central.sonatype.org/publish/publish-guide/)
 - [SBT Sonatype](https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html)
