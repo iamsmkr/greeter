@@ -98,12 +98,14 @@ Publish artifacts to nexus repository
 $ sbt publishSigned
 ```
 
-Note that versions that end with `-SNAPSHOT` will end up in snapshot repository and won't be eligible for release. Other versions would be released to staging repository which are eligible for release to maven central.
+**Note:** Versions that end with `-SNAPSHOT` will end up in snapshot repository and won't be eligible for release. Other versions would be released to staging repository which are eligible for release to maven central.
 
 ## Release
 In order to release artifacts against a version, go to staging repository, select the repository, close it and then release.
 
 [![Screenshot-2022-05-06-at-12-48-50-PM.png](https://i.postimg.cc/8PHzDSHF/Screenshot-2022-05-06-at-12-48-50-PM.png)](https://postimg.cc/MvnSbggx)
+
+**Note:** After you successfully release, your component will be available to the public on Central https://repo1.maven.org/maven2/, typically within 30 minutes, though updates to https://search.maven.org can take up to four hours.
 
 ## References
 - [Publish Guide](https://central.sonatype.org/publish/publish-guide/)
