@@ -10,6 +10,9 @@ ThisBuild / organizationHomepage := Some(url("http://shivamkapoor.com/"))
 
 crossScalaVersions := Seq(scalaVersion.value, "2.11.12", "2.13.0")
 
+sonatypeCredentialHost := "s01.oss.sonatype.org"
+sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+
 ThisBuild / scmInfo := Some(
   ScmInfo(
     url("https://github.com/iamsmkr/greeter"),
