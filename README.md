@@ -80,3 +80,20 @@ This project aims to demonstrates building complete CI/CD workflow using GitHub 
     $ cat ~/.sbt/1.0/sonatype.sbt
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials")
     ```
+
+## Publish
+Publish artifacts to nexus repository
+```sh
+$ sbt publishSigned
+```
+
+## Release
+In order to release artifacts against a version, go to staging repository, select the repository, cloase it and release.
+[![Screenshot-2022-05-06-at-12-48-50-PM.png](https://i.postimg.cc/8PHzDSHF/Screenshot-2022-05-06-at-12-48-50-PM.png)](https://postimg.cc/MvnSbggx)
+
+## References
+- [Publish Guide](https://central.sonatype.org/publish/publish-guide/)
+- [SBT Sonatype](https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html)
+- [How to publish scala module in sonatype and maven?](https://stackoverflow.com/questions/57072002/how-to-publish-scala-module-in-sonatype-and-maven)
+- [How to Publish a Java Library to Maven Central](https://www.youtube.com/watch?v=bxP9IuJbcDQ&ab_channel=Recursive)
+- [Nexus Repository Tutorial](https://www.youtube.com/watch?v=yZFvJEygn_g&ab_channel=Intellipaat)
