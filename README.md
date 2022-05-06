@@ -98,6 +98,8 @@ Publish artifacts to nexus repository
 $ sbt publishSigned
 ```
 
+Note that versions that end with `-SNAPSHOT` will end up in snapshot repository and won't be eligible for release. Other versions would be released to staging repository which are eligible for release to maven central.
+
 ## Release
 In order to release artifacts against a version, go to staging repository, select the repository, close it and then release.
 
