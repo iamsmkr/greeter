@@ -99,7 +99,8 @@ $ sbt publishSigned
 ```
 
 ## Release
-In order to release artifacts against a version, go to staging repository, select the repository, cloase it and release.
+In order to release artifacts against a version, go to staging repository, select the repository, close it and then release.
+
 [![Screenshot-2022-05-06-at-12-48-50-PM.png](https://i.postimg.cc/8PHzDSHF/Screenshot-2022-05-06-at-12-48-50-PM.png)](https://postimg.cc/MvnSbggx)
 
 ## References
