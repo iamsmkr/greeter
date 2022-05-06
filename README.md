@@ -22,7 +22,9 @@ This project aims to demonstrates building complete CI/CD workflow using GitHub 
 
 ## Configurations
 1. Install GnuPG and verify the installation
+
     Refer: https://www.gnupg.org/download/
+    
     ```sh
     $ gpg --version
 
@@ -33,13 +35,16 @@ This project aims to demonstrates building complete CI/CD workflow using GitHub 
     ```
 
 2. Generate a key
+
     A key pair allows you to sign artifacts with GPG and users can subsequently validate that artifacts have been signed by you. You can generate a key with:
     ```sh
     $ gpg --gen-key
     ```
 
 3. List the keys
+
     Once key pair is generated, we can list them along with any other keys installed:
+    
     ```sh
     $ gpg --list-keys
 
@@ -53,18 +58,22 @@ This project aims to demonstrates building complete CI/CD workflow using GitHub 
     ```
 
 4. Distribute the key and verify
-    Since other people need your public key to verify your files, you have to distribute your public key to a key server.
+
+    Since other people need your public key to verify your files, you have to distribute your public key to a key server:
+    
     ```sh
     $ gpg --keyserver keyserver.ubuntu.com --send-keys 1234517530FB96F147C6A146A326F592D39AAAAA
     $ gpg --keyserver keyserver.ubuntu.com --search-keys 'mail@shivamkapoor.com'
     ```
 
-5. Export secret keys
+5. Export secret keys for sbt
+
     ```sh
     $ gpg -a --export-secret-keys > ~/.sbt/gpg/secring.asc
     ```
 
 6. Create Sonatype credentials file under `.sbt` and add following to that file:
+
     ```sh
     $ cat sonatype_credentials
 
@@ -74,8 +83,10 @@ This project aims to demonstrates building complete CI/CD workflow using GitHub 
     password=<your password>
     ```
 
-7. Create `sonatype.sbt` and add location to sonatype credentials 
-    This lets sbt know what credentials to use to access sonatype OSSRH
+7. Create `sonatype.sbt` and add location to sonatype credentials
+
+    This lets sbt know what credentials to use to access sonatype OSSRH.
+    
     ```sh
     $ cat ~/.sbt/1.0/sonatype.sbt
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials")
